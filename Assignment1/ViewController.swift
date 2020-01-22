@@ -32,6 +32,9 @@ class ViewController: UIViewController {
             winCount+=1;
             scoreLabel.text=String(winCount);
         }
+        else{
+            winCount=0;
+        }
     }
     
     @IBAction func paperAction(_ sender: Any) {
@@ -41,6 +44,10 @@ class ViewController: UIViewController {
             winCount+=1;
             scoreLabel.text=String(winCount);
         }
+        else{
+            winCount=0;
+        }
+        
     }
     @IBAction func scissorsAction(_ sender: Any) {
         randomGame();
@@ -49,7 +56,9 @@ class ViewController: UIViewController {
             winCount+=1;
             scoreLabel.text=String(winCount);
         }
-    }
+        else{
+            winCount=0;
+        }    }
     
     func randomGame(){
         gameValue=Int.random(in:1 ... 3)
