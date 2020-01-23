@@ -29,11 +29,14 @@ class ViewController: UIViewController {
         randomGame();
         playerValue=1;
         if(gameValue==2){
+              theLabel.text="Win"
             winCount+=1;
             scoreLabel.text=String(winCount);
         }
         else{
+              theLabel.text="Loss"
             winCount=0;
+             scoreLabel.text=String(winCount);
         }
     }
     
@@ -41,11 +44,15 @@ class ViewController: UIViewController {
         randomGame();
         playerValue=2;
         if(gameValue==1){
+              theLabel.text="Win"
             winCount+=1;
             scoreLabel.text=String(winCount);
+            
         }
         else{
+            theLabel.text="Loss"
             winCount=0;
+             scoreLabel.text=String(winCount);
         }
         
     }
@@ -53,11 +60,14 @@ class ViewController: UIViewController {
         randomGame();
         playerValue=3;
         if(gameValue==2){
+            theLabel.text="Win"
             winCount+=1;
             scoreLabel.text=String(winCount);
         }
         else{
+              theLabel.text="Loss"
             winCount=0;
+             scoreLabel.text=String(winCount);
         }    }
     
     func randomGame(){
