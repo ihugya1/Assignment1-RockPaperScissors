@@ -125,6 +125,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uuZ-cp-7Kv">
                                 <rect key="frame" x="30" y="351" width="354" height="148"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiL-hR-YHj">
+                                <rect key="frame" x="180" y="155" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -144,6 +151,7 @@
                     <tabBarItem key="tabBarItem" title="Rock Paper Scissors" image="icons8-xbox-26" id="ynG-5K-j7F"/>
                     <connections>
                         <outlet property="image" destination="uuZ-cp-7Kv" id="tLC-QD-bGw"/>
+                        <outlet property="nameLabel" destination="DiL-hR-YHj" id="XHx-gz-AZy"/>
                         <outlet property="paperButton" destination="eRc-Oa-x2X" id="u5w-z9-1fO"/>
                         <outlet property="rockButton" destination="z9U-iM-J35" id="4Ar-Ez-fVN"/>
                         <outlet property="scissorsButton" destination="9aV-BQ-Zis" id="ioN-Et-YPY"/>

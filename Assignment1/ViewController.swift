@@ -8,19 +8,30 @@
 
 import UIKit
 
-class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController {
     var gameValue = 0;
     var playerValue = 0;
     var winCount=0;
-    private let dwarves = ["Ian", "Tyler"]
-    let simpleTableIdentifier = "test"
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+     
+        
+      
+    }
+    override func viewWillAppear(_ animated: Bool) {
+                super.viewWillAppear(animated)
+        
+    
+     
+        
     }
     //MARK:-
     //Market: Table View Data Source Methods
-
+    var name = UserDefaults().string(forKey: "name")
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
@@ -29,23 +40,14 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var scoreLabel: UILabel!
    
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dwarves.count
-    }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: simpleTableIdentifier)
-        if(cell==nil){
-            cell=UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: simpleTableIdentifier)
-        }
-        cell?.textLabel?.text=dwarves[indexPath.row]
-        return cell!
-    }
+    
     
     @IBAction func displayActionSheet(_ sender: Any) {
         
         
     }
     @IBAction func rockAction(_ sender: Any) {
+        nameLabel.text = name;
         randomGame();
         playerValue=1;
         if(gameValue==2){
@@ -74,6 +76,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func paperAction(_ sender: Any) {
+        nameLabel.text = name;
         randomGame();
         playerValue=2;
         if(gameValue==1){
@@ -102,7 +105,7 @@ class ViewController: UIViewController ,UITableViewDelegate, UITableViewDataSour
         
     }
     @IBAction func scissorsAction(_ sender: Any) {
-        randomGame();
+        nameLabel.text = name;        randomGame();
         playerValue=3;
         if(gameValue==2){
             theLabel.text="Win"

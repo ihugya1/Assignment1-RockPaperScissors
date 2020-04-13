@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C13C66162444EA2D003BE372 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C13C66152444EA2D003BE372 /* Settings.bundle */; };
 		C1A2D551242FE01600E3678D /* SingleComponentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A2D550242FE01600E3678D /* SingleComponentPickerViewController.swift */; };
 		FC6F1D0323D8C57100CAFC20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6F1D0223D8C57100CAFC20 /* AppDelegate.swift */; };
 		FC6F1D0523D8C57100CAFC20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6F1D0423D8C57100CAFC20 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C13C66152444EA2D003BE372 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C1A2D550242FE01600E3678D /* SingleComponentPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SingleComponentPickerViewController.swift; path = "/Users/user919223/Documents/GitHub/Assignment1-RockPaperScissors/Assignment1/../../Assignment3/Assignment3/SingleComponentPickerViewController.swift"; sourceTree = "<absolute>"; };
 		FC6F1CFF23D8C57100CAFC20 /* Assignment1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC6F1D0223D8C57100CAFC20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		FC6F1CF623D8C57100CAFC20 = {
 			isa = PBXGroup;
 			children = (
+				C13C66152444EA2D003BE372 /* Settings.bundle */,
 				FC6F1D0123D8C57100CAFC20 /* Assignment1 */,
 				FC6F1D0023D8C57100CAFC20 /* Products */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13C66162444EA2D003BE372 /* Settings.bundle in Resources */,
 				FC6F1D0D23D8C57200CAFC20 /* LaunchScreen.storyboard in Resources */,
 				FC6F1D0A23D8C57200CAFC20 /* Assets.xcassets in Resources */,
 				FC6F1D0823D8C57100CAFC20 /* Main.storyboard in Resources */,
